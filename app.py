@@ -24,9 +24,6 @@ if uploaded_file:
             
             prompts = {
                 "General Expert": "Describe this image in detail.",
-                "Chef": "Identify ingredients in this image and suggest a recipe.",
-                "Interior Designer": "Critique the design of this space and suggest improvements.",
-                "Dungeon Master": "Describe this scene as if it is a room in a fantasy RPG dungeon."
             }
 
             response = model.generate_content([prompts[mode], image])
